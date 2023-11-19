@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAGU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url("amiga.jpg"); /* Reemplaza con la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #161616;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1em;
+        }
+
+        #invitation-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(243, 239, 239, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡KAGU!</h1>
+    </header>
+
+    <div id="invitation-content">
+        <p>¡Hola! ¿Te invito a cenar?</p>
+        <p> Kagu </p>
+        <p>Fecha: Hoy</p>
+        <p>Hora: 19:00 </p>
+        <p>Lugar: Polmar </p>
+
+        <audio controls autoplay loop>
+            <source src="pollito.mp3" type="audio/mp3"> <!-- Reemplaza con la ruta de tu archivo de música -->
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+
+        <p>¡Espero verte pronto!</p>
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .option-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .option {
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="option-container">
+        <div class="option" onclick="seleccionarOpcion(true)">
+            <img src="gato.webp" alt="Sí">
+            <p>Sí</p>
+        </div>
+
+        <div class="option" onclick="seleccionarOpcion(false)">
+            <img src="sadp.gif" alt="No">
+            <p>No</p>
+        </div>
+    </div>
+
+    <script>
+        function seleccionarOpcion(opcion) {
+            if (opcion) {
+                alert("Seleccionaste Sí. ¡Gracias por tu elección!");
+                window.location.href = "https://www.youtube.com/watch?v=QL5HYaVsJnw"
+            } else {
+                alert("Seleccionaste No. ¡Quizás la próxima vez!");
+                window.location.href = "https://www.youtube.com/watch?v=GbluUUonhdg"
+            }
+        }
+    </script>
+</body>
+</html>
